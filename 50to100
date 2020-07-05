@@ -1,0 +1,15 @@
+i=0
+guess = float(input("Choose a number between 50 and 100!: \n"))
+while i != "guess":
+
+if guess < 50:
+    print("Too low!")
+guess = float(input("Try Again: \n"))
+
+elif guess > 100:
+  print("Too high!")
+  guess = float(input("Try again: \n"))
+
+else:
+  print("Great job!")
+break
