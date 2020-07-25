@@ -1,0 +1,80 @@
+#Things to add:
+#1. Upper or lower
+#2. Is there a way to put a URL that people can click on?
+#3. More questions with some variety like a list where people can choose between a, b, c, or d
+#4. Add a would you like to play again at the end.
+#5. Add a dictionary 
+
+Napa=0
+Popeye=0
+Smooshy=0
+
+
+print("Hi! What's your name?")
+name = input("> ")
+
+print ("Nice to meet you " + name + "!")
+print ("")
+print ("To brighten your day we are going to decide what new puppy you should be following on Instagram based on your preferences. Let’s get started!")
+print ("")
+
+
+#Question 1
+print ("What type of persona do you prefer? Sassy or Sweet?")
+
+while True:
+  answer = input()
+  if answer == "Sassy":
+    print("I knew you'd say that!")
+    Napa+=1
+    break
+  elif answer == "Sweet":
+    print("I knew you'd say that!  ")
+    Popeye+=1
+    break
+  else:
+    print("Don't be cheeky with me. Please type either Sassy or Sweet.")
+
+#Question 2
+print("What about travel related posts? Yay or Nay?")
+
+while True:
+  answer = input()
+  if answer == "Yay":
+    print("Nice choice!! I love travelling too.")
+    Napa+=1
+    break
+  elif answer == "Nay":
+    print("Nice choice!! I hate travelling too. Staying home is life!")
+    Smooshy+=1
+    break
+  else:
+    print("Don't be cheeky with me. Please type either Yay or Nay.")
+
+#Question 3
+print("Do you like seeing food in Instagram posts? Oui or Non? If you say no I don't know if we can be friends anymore. ")
+
+while True:
+  answer = input()
+  if answer == "Oui":
+    print("Thank goodness! I was not in the mood to lose a friend 🤗.")
+    Napa+=1
+    break
+  elif answer == "Non":
+    print("I'm going to let this one slide...😑")
+    Smooshy+=1
+    break
+  else:
+    print("You are not good at reading instructions 🤣. Please type either Oui or Non.")
+
+
+
+if Napa > Popeye and Napa > Smooshy:
+  print("Based on your preferences, you should follow @NapaTheYorkie on Instagram")
+elif Popeye > Napa and Popeye > Smooshy:
+  print("Based on your preferences, you should follow @popeyethefoodie on Instagram")
+else:
+  print("Based on your preferences, you should follow @smooshy_mooshy on Instagram")
+
+
+print ("Thanks for playing!")
